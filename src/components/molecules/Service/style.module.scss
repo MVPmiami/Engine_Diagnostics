@@ -1,0 +1,60 @@
+@import "./../../../assets/styles/style.scss";
+
+.serviceWrapper {
+  min-width: 25rem;
+  margin: 0 2.5rem 3.5rem;
+  min-height: 25rem;
+  img {
+    width: 400px;
+    height: 190px;
+  }
+  .contentWrapper {
+    min-height: 10.875rem;
+    .serviceHeader {
+      @include fontForText($whiteText);
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: -0.03rem;
+      margin: 1.25rem 0;
+    }
+    .serviceText {
+      width: 100%;
+      @include fontForText($whiteText);
+      line-height: 1.625rem;
+      letter-spacing: -0.03rem;
+      margin-bottom: 1.8125rem;
+      opacity: 0.7;
+    }
+  }
+  .serviceBtn {
+    @include fontForHeaderBebas($yellow);
+    @include flexrow(space-between, center);
+    font-size: 1.25rem;
+    line-height: 1rem;
+    letter-spacing: 0.4375rem;
+    overflow-y: hidden;
+    &::after {
+      content: "";
+      margin-left: 0.84375rem;
+      background-image: url("./../../../assets/img/arrow.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 1.338125rem;
+      height: 0.588125rem;
+      overflow-y: hidden;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .serviceWrapper {
+    min-width: auto;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 4rem;
+    img {
+      max-width: 100%;
+      height: 190px;
+    }
+  }
+}

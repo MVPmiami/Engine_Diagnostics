@@ -1,0 +1,165 @@
+@import "./../../../assets/styles/style.scss";
+
+.WhyweWrapper {
+  @include flexrow(flex-start, center);
+  position: relative;
+  width: 100%;
+  .header {
+    @include flexcolumn(space-around, center);
+    padding: 5.875rem 0;
+    width: 50%;
+    .head {
+      @include fontForHeader($headerText);
+      font-size: 2rem;
+      line-height: 2.625rem;
+      letter-spacing: -0.03rem;
+      max-width: 28.75rem;
+      margin-bottom: 3.125rem;
+    }
+    .text {
+      @include fontForText($greyText);
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      letter-spacing: -0.03rem;
+      max-width: 28.75rem;
+      opacity: 0.7;
+    }
+  }
+  .advantagesWrapper {
+    width: 50%;
+    @include flexcolumn(space-around, center);
+    background-color: $greyBcg;
+    padding: 9.40625rem 0;
+    margin-left: 3.643125rem;
+    .listWrapper {
+      @include flexcolumn(space-between, flex-start);
+      min-width: 28.75rem;
+    }
+    .advantagesHeader {
+      @include fontForText($headerText);
+      font-size: 1.5rem;
+      line-height: 2.125rem;
+      letter-spacing: -0.03rem;
+      margin-bottom: 1.5rem;
+    }
+    & ul {
+      list-style: none;
+    }
+    & ul li {
+      @include flexrow(flex-start, center);
+      height: 1.875rem;
+      @include fontForText($advantageText);
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+      letter-spacing: -0.03rem;
+      opacity: 0.7;
+      margin: 0.9375rem 0;
+    }
+    & ul li::before {
+      content: "";
+      display: flex;
+      width: 20px;
+      height: 20px;
+      background-image: url("./../../../assets/img/icon.png");
+      background-size: cover;
+      margin-right: 1.25rem;
+    }
+  }
+  .tv {
+    background-image: url("./../../../assets/img/tv.png");
+    background-size: cover;
+    width: 18.75rem;
+    height: 18.75rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: calc(50% - 9.375rem);
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1420px) {
+  .WhyweWrapper {
+    .header {
+      .head {
+        font-size: 1.75rem;
+      }
+    }
+    .advantagesWrapper {
+      .listWrapper {
+        min-width: 25.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .WhyweWrapper {
+    @include flexcolumn(flex-start, center);
+    .header {
+      max-width: 25.75rem;
+      width: 25.75rem;
+      .head {
+        font-size: 1.75rem;
+      }
+    }
+    .advantagesWrapper {
+      margin-left: 0;
+      width: 100%;
+      .listWrapper {
+        min-width: 25.75rem;
+      }
+    }
+    .tv {
+      width: 14.75rem;
+      height: 14.75rem;
+      top: calc(50% - 7.375rem);
+    }
+  }
+}
+@media (max-width: 620px) {
+  .WhyweWrapper {
+    @include flexcolumn(flex-start, center);
+    .header {
+      max-width: 17.75rem;
+      width: 17.75rem;
+      .head {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+    .advantagesWrapper {
+      margin-left: 0;
+      width: 100%;
+      .advantagesHeader {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        letter-spacing: -0.03rem;
+        margin-bottom: 1.5rem;
+      }
+      .listWrapper {
+        min-width: auto;
+        max-width: 17.75rem;
+      }
+      & ul li {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        overflow-y: hidden;
+      }
+    }
+    .tv {
+      width: 10.75rem;
+      height: 10.75rem;
+      top: calc(50% - 5.375rem);
+    }
+  }
+}
+@media (max-width: 620px) {
+  .WhyweWrapper {
+    @include flexcolumn(flex-start, center);
+    .tv {
+      width: 10.75rem;
+      height: 10.75rem;
+      top: calc(50% - 4.375rem);
+    }
+  }
+}

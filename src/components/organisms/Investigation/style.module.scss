@@ -1,0 +1,183 @@
+@import "./../../../assets/styles/style.scss";
+
+.investWrapper {
+  background-image: url("./../../../assets/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .contentWrapper {
+    margin-top: 8rem;
+    @include flexcolumn(space-between, center);
+    min-width: 88.75rem;
+    .descriptionWrapper {
+      @include flexrow(space-between, center);
+      margin-bottom: 3.9375rem;
+      min-width: 73.75rem;
+      .description {
+        max-width: 36.25rem;
+        .mainHeader {
+          @include fontForHeader($whiteText);
+          margin-bottom: 2.375rem;
+        }
+        .descriptionText {
+          @include fontForText($whiteText);
+          font-size: 1.25rem;
+          line-height: 2.125rem;
+          max-width: 22.6875rem;
+          opacity: 0.7;
+        }
+      }
+      .getform {
+        @include flexcolumn(space-between, baseline);
+        .button {
+          @include flexrow(center, center);
+          padding: 1.8125rem 3.625rem;
+          margin-bottom: 2.5rem;
+          background-color: $yellow;
+          & p {
+            @include fontForHeader($blackText);
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            letter-spacing: 0.125rem;
+            text-transform: uppercase;
+          }
+          .btnImg {
+            margin-right: 0.75rem;
+          }
+        }
+        .btnDesription {
+          @include fontForText($whiteText);
+          max-width: 21.25rem;
+          font-size: 0.9375rem;
+          line-height: 1.75rem;
+        }
+      }
+    }
+  }
+  .conditionsWrapper {
+    @include flexrow(space-between, flex-end);
+    width: 100%;
+    margin-bottom: 3.75rem;
+    .conditions {
+      @include flexrow(space-between, center);
+      min-width: 63.75rem;
+      .condition {
+        max-width: 16.25rem;
+        @include flexrow(flex-start, center);
+        & img {
+          margin-right: 1.9375rem;
+          min-width: 3.0625rem;
+          min-height: 2.935rem;
+        }
+        & p {
+          @include fontForText($whiteText);
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+          letter-spacing: -0.03rem;
+        }
+      }
+    }
+    .video {
+      width: 13.75rem;
+      height: 13.75rem;
+      @include flexrow(center, center);
+      background-image: url("./../../../assets/img/stamp.png");
+      .photo {
+        @include flexrow(center, center);
+        background-image: url("./../../../assets/img/photo.png");
+        width: 8.75rem;
+        height: 8.75rem;
+        .play {
+          background-image: url("./../../../assets/img/Polygon.png");
+          background-repeat: no-repeat;
+          width: 1.264375rem;
+          height: 1.4375rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1420px) {
+  .investWrapper {
+    .contentWrapper {
+      .descriptionWrapper {
+        min-width: 58.75rem;
+      }
+    }
+    .conditionsWrapper {
+      max-width: 68.75rem;
+      .conditions {
+        min-width: 53.75rem;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .investWrapper {
+    .contentWrapper {
+      margin-top: 3rem;
+      .descriptionWrapper {
+        @include flexcolumn(space-between, baseline);
+        min-width: 35.75rem;
+        margin-bottom: 3rem;
+        .description {
+          margin-bottom: 3rem;
+        }
+      }
+      .conditionsWrapper {
+        @include flexrow(space-between, center);
+        max-width: 35.75rem;
+        margin-bottom: 3.75rem;
+        .conditions {
+          @include flexcolumn(space-between, center);
+          min-width: 15.75rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .investWrapper {
+    .contentWrapper {
+      min-width: auto;
+      margin-top: 1rem;
+      max-width: 18.75rem;
+      .descriptionWrapper {
+        min-width: auto;
+        max-width: 18.75rem;
+        .description {
+          max-width: 18.75rem;
+          .mainHeader {
+            font-size: 1.4rem;
+          }
+          .descriptionText {
+            max-width: 18.75rem;
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+    .conditionsWrapper {
+      @include flexcolumn(space-between, center);
+      .conditions {
+        min-width: auto;
+        max-width: 18.75rem;
+        .condition {
+          max-width: 16.25rem;
+          margin-bottom: 1rem;
+          & p {
+            font-size: 1rem;
+            line-height: 1.75rem;
+            letter-spacing: -0.03rem;
+          }
+        }
+      }
+      .video {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

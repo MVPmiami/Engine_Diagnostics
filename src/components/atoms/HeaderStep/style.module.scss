@@ -1,0 +1,62 @@
+@import "./../../../assets/styles/style.scss";
+
+.headerStepWrapper {
+  @include flexcolumn(space-around, center);
+  .headerWrapper {
+    background: $linearForText;
+    margin-top: 6.5rem;
+    .header {
+      @include fontForHeaderBebas($blackText);
+      font-size: 5rem;
+      line-height: 4rem;
+      overflow-y: hidden;
+      letter-spacing: 0.3125rem;
+      background: $whiteText;
+      mix-blend-mode: screen;
+    }
+  }
+  .text {
+    @include fontForHeader($greyTextStrong);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 31.4375rem;
+    text-align: center;
+    margin: 2.25rem 0 6.25rem;
+  }
+}
+@media (max-width: 1200px) {
+  .headerStepWrapper {
+    .headerWrapper {
+      .header {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .headerStepWrapper {
+    @include flexcolumn(space-around, center);
+    .headerWrapper {
+      background: $linearForText;
+      margin-top: 6.5rem;
+      .header {
+        @include fontForHeaderBebas($blackText);
+        font-size: 2rem;
+        line-height: 2rem;
+        overflow-y: hidden;
+        letter-spacing: 0.3125rem;
+        background: $whiteText;
+        mix-blend-mode: screen;
+        text-align: center;
+      }
+    }
+    .text {
+      @include fontForHeader($greyTextStrong);
+      font-size: 1rem;
+      line-height: 1.75rem;
+      max-width: 31.4375rem;
+      text-align: center;
+      margin: 2.25rem 0 6.25rem;
+    }
+  }
+}

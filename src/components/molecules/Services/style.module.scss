@@ -1,0 +1,56 @@
+@import "./../../../assets/styles/style.scss";
+
+.servicesWrapper {
+  @include flexcolumn(center, center);
+  background-image: url("./../../../assets/img/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .headerServices {
+    margin: 6.25rem 0 1.25rem;
+    @include fontForHeaderBebas($yellow);
+    line-height: 1.25rem;
+    overflow-y: hidden;
+    font-size: 1.25rem;
+    letter-spacing: 1.25rem;
+    text-transform: uppercase;
+  }
+  .headerDescription {
+    @include fontForHeader($whiteText);
+    font-size: 2rem;
+    line-height: 2.626rem;
+    letter-spacing: -0.03rem;
+  }
+  .itemsWrapper {
+    @include flexrow(flex-start, center);
+    width: 80%;
+    padding-left: 23.75rem;
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .servicesWrapper {
+    .headerDescription {
+      @include fontForHeader($whiteText);
+      font-size: 1.5rem;
+      line-height: 2rem;
+      max-width: 31.25rem;
+    }
+    .itemsWrapper {
+      padding-left: 8.75rem;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .servicesWrapper {
+    .headerDescription {
+      @include fontForHeader($whiteText);
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      max-width: 18.75rem;
+    }
+    .itemsWrapper {
+      @include flexcolumn(center, center);
+      padding-left: 0;
+    }
+  }
+}

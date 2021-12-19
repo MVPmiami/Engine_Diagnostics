@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./../fonts/proximanova_regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./../fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "AA Bebas Neue";
+  src: url("./../fonts/aa_bebasneue.ttf");
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 1421px) {
+  .container {
+    max-width: 88.75rem;
+  }
+}
+@media (max-width: 1420px) {
+  .container {
+    max-width: 68.75rem;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 50.75rem;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 37.5rem;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    max-width: 20rem;
+  }
+}
