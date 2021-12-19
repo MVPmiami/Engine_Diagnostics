@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Engine_Diagnostics/static/css/main.d71b3aaa.css",
+    "main.js": "/Engine_Diagnostics/static/js/main.2fdde3f6.js",
+    "static/media/bg.jpg": "/Engine_Diagnostics/static/media/bg.51fceacb394608520f89.jpg",
+    "static/media/bg2.png": "/Engine_Diagnostics/static/media/bg2.f38e9332a21e59595489.png",
+    "static/media/p2.png": "/Engine_Diagnostics/static/media/p2.c4e7607cc9dcf48aac1f.png",
+    "static/media/photoSlider.png": "/Engine_Diagnostics/static/media/photoSlider.82c5913eb05e980087dc.png",
+    "static/media/tv.png": "/Engine_Diagnostics/static/media/tv.48cae198791ca93392d2.png",
+    "static/media/proximanova_regular.ttf": "/Engine_Diagnostics/static/media/proximanova_regular.8181ca4b7c2d1189d78a.ttf",
+    "static/media/p1.png": "/Engine_Diagnostics/static/media/p1.0d3805ee5ee84d997b9c.png",
+    "static/media/p4.png": "/Engine_Diagnostics/static/media/p4.4673f939d48d7d53fadf.png",
+    "static/media/p3.png": "/Engine_Diagnostics/static/media/p3.87be66a5c869b647fae1.png",
+    "static/media/aa_bebasneue.ttf": "/Engine_Diagnostics/static/media/aa_bebasneue.76098e56e018f4c77fbe.ttf",
+    "static/media/Gilroy-ExtraBold.otf": "/Engine_Diagnostics/static/media/Gilroy-ExtraBold.0094146a0505298ed06a.otf",
+    "static/media/p5.png": "/Engine_Diagnostics/static/media/p5.46e7a53fef7908cbfd98.png",
+    "static/media/photo.png": "/Engine_Diagnostics/static/media/photo.e1d7b6952f6b312e23bf.png",
+    "index.html": "/Engine_Diagnostics/index.html",
+    "main.d71b3aaa.css.map": "/Engine_Diagnostics/static/css/main.d71b3aaa.css.map",
+    "main.2fdde3f6.js.map": "/Engine_Diagnostics/static/js/main.2fdde3f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d71b3aaa.css",
+    "static/js/main.2fdde3f6.js"
+  ]
+}
